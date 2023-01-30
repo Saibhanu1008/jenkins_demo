@@ -20,7 +20,7 @@ pipeline {
         stage('Docker_image_verifycation') {
             steps {
                 sh 'sudo docker images'
-                sh 'echo "i am due to webhook"
+                sh 'echo "i am due to webhook"'
             }
         }
     }
