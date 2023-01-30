@@ -14,12 +14,12 @@ pipeline {
         }
         stage('docker_image') {
             steps {
-                echo 'sudo docker build -t myimage:v1 .'
+                echo 'sudo docker build -t myimage:v2 .'
             }
         }
         stage('Docker_image_verifycation') {
             steps {
-                sh 'docker images'
+                sh 'sudo docker images'
                 sh 'echo "i am due to webhook"'
             }
         }
